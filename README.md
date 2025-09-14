@@ -1,2 +1,2 @@
 # AI_PORTFOLIO_001
-AI PORTFOLIO to show of exciting Artificial Intelligence skills and experience.
+AI PORTFOLIO to show off exciting Artificial Intelligence skills and experience.

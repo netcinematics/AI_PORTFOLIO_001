@@ -202,8 +202,8 @@
     </style>
 <!-- TOP MENU -->
 <section id="topMenuFrame" style="padding: 0.444em; display:block;">
-    <button id="topNavBtn11"  class="menuBtn" onclick="menuFn(event)"}>
-        <i class="fas fa-book-open" style="color:yellow">&nbsp;BOOKz</i>
+    <button id="btmNavBtn13" class="menuBtn" onclick="menuFn(event)"}>
+        <i class="fas fa-home" style="color:darkorange">&nbspAI</i>
     <button id="topNavBtn7" class="menuBtn" onclick="menuFn(event)"}>
         <i class="fas fa-photo-video" style="color:lightskyblue">&nbsp;CARDz</i>
     <button id="topNavBtn8"  class="menuBtn" onclick="menuFn(event)"}>
@@ -212,8 +212,9 @@
         <i class="fas fa-music" style="color:mediumpurple">&nbsp;JAMz</i>
     <button id="topNavBtn10"  class="menuBtn" onclick="menuFn(event)"}>
         <i class="fas fa-video" style="color:indianred">&nbsp;VIDz</i>
-    <button id="btmNavBtn13" class="menuBtn" onclick="menuFn(event)"}>
-        <i class="fas fa-home" style="color:darkorange">&nbspAI</i>
+    <button id="topNavBtn11"  class="menuBtn" onclick="menuFn(event)"}>
+        <i class="fas fa-book-open" style="color:yellow">&nbsp;BOOKz</i>
+
 </section>
 
 <!-- GRID9 MINIMUM EXAMPLE | ui side -->
@@ -253,6 +254,16 @@
     <section id="itemDISPLAYFRAME1" style="display:none; padding:0.222em; border:1px solid darkslateblue; border-radius:13px; width:98%; margin:0 auto; border-radius:22px; max-width: 66em;"> </section>
 </article>
 <style>
+
+    .midheader-border-frame{
+        border-width:0px; 
+        border-bottom-width:2px;
+        border-style:solid;
+        border-color:darkslateblue;
+    box-shadow: rgb(30, 84, 200) 2px 2px 14px 8px inset;
+    border-radius: 18px;        
+    }
+
     #AI_PROJECTS b{color:cornflowerblue; font-size:1.222em; }
     #AI_PROJECTS {color:steelblue; font-size:1em; }
 /*Here is Mobile Breakpoint Template:
@@ -296,9 +307,7 @@ put all your mobile styles above*/
     #AI_PROJECTS{flex-direction: row;}
     #topMenuFrame{ margin-top:0}
     .menuBtn{height: 3em; font-size: 1em;}
-    /* .bluesteel-border-frame{
-        border-width:0px; 
-    } */
+
 }
 
     </style>
@@ -317,21 +326,6 @@ put all your mobile styles above*/
 <section id="subTitleFrame" style="margin-top:0;" >
     <div id="subTitle" class="pageTitleTXT"  style="margin-top:0.444em;color:#5f00b5;padding:0.111em; text-shadow: 5px -6px 16px blue;">SPAZEFALCON<span class="tradeMark">&trade;</span></div>
 </section>
-<!-- 
-<section style="padding: 0.444em;">
-    <button id="btmNavBtn6" class="menuBtn" onclick="menuFn(event)"}>
-        <i class="fas fa-home" style="color:darkorange">&nbsp;WEBz</i></a>
-    <button id="btmNavBtn7" class="menuBtn" onclick="menuFn(event)"}>
-        <i class="fas fa-photo-video" style="color:lightskyblue">&nbsp;CARDz</i>
-    <button id="btmNavBtn8"  class="menuBtn" onclick="menuFn(event)"}>
-        <i class="fas fa-book" style="color:darkseagreen">&nbsp;BITz</i>
-    <button id="btmNavBtn9"  class="menuBtn" onclick="menuFn(event)"}>
-        <i class="fas fa-music" style="color:mediumpurple">&nbsp;JAMz</i>
-    <button id="btmNavBtn10"  class="menuBtn" onclick="menuFn(event)"}>
-        <i class="fas fa-video" style="color:indianred">&nbsp;VIDz</i>
-    <button id="btmNavBtn11"  class="menuBtn" onclick="menuFn(event)"}>
-        <i class="fas fa-book-open" style="color:yellow">&nbsp;BOOKz</i>
-</section> -->
     
 
 <footer>
@@ -555,7 +549,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
     let idx = urlParams.get('idx'); //idx for specific items-.
     if(!idx){idx = null}
     kbz.MainVw.item_idx = idx;
-    if(!mode){mode = 1} //gallery
+    // if(!mode){mode = 1} //gallery
+    if(!mode){mode = 13} //bio
+    // if(!mode){mode = 8} //good orby 1
     // if(!mode){mode = 5} //vidz
     // if(!mode){mode = 7} //bookz
     // if(!mode){mode = 6} //display all

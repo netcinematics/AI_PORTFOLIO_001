@@ -134,29 +134,40 @@ function initPage(){
                 if (ui.itemDISPLAYFRAME1) { ui.itemDISPLAYFRAME1.style.display = 'none'; } 
             } else 
             if(mode===5){  //vidz
-                viz.create_Dynamic_TTL('COZMOVIDZ',ui.nftDisplay1);
+                viz.create_Dynamic_TTL('AI_VIDZ',ui.nftDisplay1);
                 viz.create_UTOOB_VIEW();
-                // let vidzIMG_ENUM = {START:1, STOP:6,PATH:'./copyrightNetCinematics/KRYPTOVIDZ' }
-                // let vidzPATH_META = {
-                //     1:'EP1.V11_remaster2021.mp4',
-                //     2:'EP2PROD2a.mp4',
-                //     3:'EP3_PRODv8_1080p.mp4',
-                //     4:'EP4_PRODv4.mp4',
-                //     5:'S2-EP5_PT1_23.mp4',
-                //     6:'EP6.V6.mp4',
-                // };
-                // let vidzMetaNet = [];
-                // for ( let i=vidzIMG_ENUM.START; i<=vidzIMG_ENUM.STOP; i++ ){
-                //     vidzMetaNet.push(
-                //         {id:i, IMGPATH:`${vidzIMG_ENUM.PATH}/img${i}.png`
-                //         ,
-                //           VIDPATH:`${vidzIMG_ENUM.PATH}/${vidzPATH_META[i]}`
-                //         }
-                //     );
-                // }
-                // for(let vid of vidzMetaNet){
-                //     viz.create_META_VIEW(vid);
-                // }//ENUM LOAD
+
+                let aiVidTXT = `
+                <section>
+                    <h2>AnimalHOUSE | AI Video | 002</h2>
+                    <div class="video-container" style="background:black;border-radius:13px;border:solid 1px purple;padding:1em;">
+                        <iframe width="100%" height="420px" src="https://www.youtube.com/embed/kspS9NO-RwM" title="AnimalHOUSE | AI Video | 002" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <footer style="background:black;border-radius:13px;border:solid 1px steelblue;padding:1em;">
+                    Made with Google VEO<br>Video & Audio by SPAZEFALCON</footer>
+                    <h2>CYBERCITY | AI Video | 001</h2>
+                    <div class="video-container"  style="background:black;border-radius:13px;border:solid 1px purple;padding:1em;">
+                        <iframe 
+                            width="100%" height="730px"
+                            src="https://www.youtube.com/embed/9iM54EozzRU" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <footer style="background:black;border-radius:13px;border:solid 1px steelblue;padding:1em;">
+                    Made with VEO for Google Creative Lab<br>Video & Audio by SPAZEFALCON</footer>         
+                </section> 
+                <header style="background:black;border-radius:13px;border:solid 1px steelblue;padding:1em;margin-top:1em;">
+                    METAVERSE VIDEOS<br>SONY & Virtual Reality OCULUS<br>Music, Story, and Video by SPAZEFALCON</header>       
+                `;
+                let aiVidCard = document.createElement('article'); //IMG  //OTHER IMAGE TYPES HERE
+                aiVidCard.innerHTML = aiVidTXT;
+                let headElem = nftDisplay1.firstElementChild;
+                // if (nftDisplay1 && headElem && aiVidCard){ headElem.insertAdjacentElement('afterbegin', aiVidCard); }
+                if (nftDisplay1 && headElem) { headElem.insertAdjacentElement('afterend', aiVidCard); }
+
                 nftDisplay1.style.display = 'block';
                 KRYPTOBOOKFrame1.style.display = 'none';
                 if (ui.GalleryDISPLAYFRAME1) { ui.GalleryDISPLAYFRAME1.style.display = 'none'; } 
@@ -284,18 +295,17 @@ const METANET = { //ATTRIBUTE OVERRIDES BY TOKEN ID,
                 TXTTTL = document.createElement('article');
                 TXTTTL.style.backgroundColor = 'black';
                 TXTTTL.style.border = "1px solid steelblue"
-                if(document.body.clientWidth > 888){ TXTTTL.style.borderWidth = "0px";  } //RESPONSIVE
+                if(document.body.clientWidth > 888){ TXTTTL.style.borderWidth = "1px";  } //RESPONSIVE
                 TXTTTL.style.borderRadius = "13px"
                 TXTTTL.style.padding = "0.888em"
                 TXTTTL.style.margin = "2em 0 2em 0"
-                TXTTTL.style.maxWidth = "44em"
-                TXTTTL.style.cursor = "pointer"
+                // TXTTTL.style.maxWidth = "44em"
+                // TXTTTL.style.cursor = "pointer"
                 TXTTTL.style.overflow = "hidden";     //CROP
                 // TXTTTL.style.marginBottom = "1em";   //CROP
                 TXTTTL.style.textAlign = "left";
-                // TXTTTL.style.marginLeft = "2em";
                 TXTTTL.style.fontWeight = "bold";
-                TXTTTL.classList.add('bluesteel-border-frame');
+                TXTTTL.classList.add('midheader-border-frame');
                 TXTTTL.innerHTML = `${workbitz.TTL}`;
                 if (historyFrame && TXTTTL) { historyFrame.insertAdjacentElement('beforeend', TXTTTL); }
             }
@@ -304,7 +314,7 @@ const METANET = { //ATTRIBUTE OVERRIDES BY TOKEN ID,
                 IMGFRAME = document.createElement('article');
                 IMGFRAME.style.backgroundColor = 'black';
                 IMGFRAME.style.border = "1px solid steelblue"
-                if(document.body.clientWidth > 888){ IMGFRAME.style.borderWidth = "0px";  } //RESPONSIVE
+                if(document.body.clientWidth > 888){ IMGFRAME.style.borderWidth = "1px";  } //RESPONSIVE
                 IMGFRAME.style.borderRadius = "13px"
                 IMGFRAME.style.padding = "0.888em"
                 IMGFRAME.style.margin = "0.88em auto"
@@ -328,7 +338,7 @@ const METANET = { //ATTRIBUTE OVERRIDES BY TOKEN ID,
                 TXTCAPTION = document.createElement('article');
                 TXTCAPTION.style.backgroundColor = 'black';
                 TXTCAPTION.style.border = "1px solid steelblue"
-                if(document.body.clientWidth > 888){ TXTCAPTION.style.borderWidth = "0px";  } //RESPONSIVE
+                if(document.body.clientWidth > 888){ TXTCAPTION.style.borderWidth = "1px";  } //RESPONSIVE
                 TXTCAPTION.style.borderRadius = "13px"
                 TXTCAPTION.style.padding = "0.888em"
                 TXTCAPTION.style.margin = "0.88em auto"
@@ -435,6 +445,7 @@ const METANET = { //ATTRIBUTE OVERRIDES BY TOKEN ID,
             txtCard1.style.padding = "2em"
             txtCard1.style.margin = "0 auto"
             txtCard1.style.fontWeight = "bold";
+            txtCard1.style.fontSize = "1.222em";
             txtCard1.style.boxShadow = "inset rgb(30 84 200) 2px 2px 14px 8px"
             txtCard1.style.borderRadius = "18px"
             txtCard1.addEventListener("click", ()=> {
@@ -449,6 +460,7 @@ const METANET = { //ATTRIBUTE OVERRIDES BY TOKEN ID,
             txtCard2.style.padding = "2em"
             txtCard2.style.margin = "0 auto"
             txtCard2.style.fontWeight = "bold";
+            txtCard2.style.fontSize = "1.222em";
             txtCard2.style.boxShadow = "inset rgb(30 84 200) 2px 2px 14px 8px"
             txtCard2.style.borderRadius = "18px"
             
@@ -460,6 +472,7 @@ const METANET = { //ATTRIBUTE OVERRIDES BY TOKEN ID,
             txtCard3.style.padding = "2em"
             txtCard3.style.margin = "0 auto"
             txtCard3.style.fontWeight = "bold";
+            txtCard3.style.fontSize = "1.222em";
             txtCard3.style.boxShadow = "inset rgb(30 84 200) 2px 2px 14px 8px"
             txtCard3.style.borderRadius = "18px"
             
@@ -468,10 +481,10 @@ const METANET = { //ATTRIBUTE OVERRIDES BY TOKEN ID,
     <section style="text-align:center;margin:1em;line-height:2em;color:steelblue;">
             <div><b>SPAZE FALCON</b></div>
         <div style="font-size:0.666em; margin-left:20px;"><i>CREATOR | DEVELOPER | ARTIST | ENTREPRENEUR</i></div>
-        <div style="font-size:0.666em; margin-left:20px;"><i>FOUNDER | KRYPTOSPAZE | COZMOCAT STUDIOS</i></div>
-        <div style="font-size:0.666em; margin-left:20px;"><i>CO-FOUNDER | AI BANKBOOKS | AI STORYBOOK | AI CREATIVE DEV</i></div>
-        <div style="font-size:0.666em; margin-left:20px;"><i>CO-FOUNDER | NEURAL NET | AXI AI</i></div>
-        <div style="font-size:0.666em; margin-left:20px;"><i>OPENSEA | RARIBLE | FOUNDATION | MINTABLE</i></div>
+        <div style="font-size:0.666em; margin-left:20px;"><i>FOUNDER | KRYPTOSPAZE | NETCINEMATICS</i></div>
+        <div style="font-size:0.666em; margin-left:20px;"><i>CO-FOUNDER | AI_BANKBOOKS | AI_STORYBOOK | AI_CREATIVE DEV</i></div>
+        <div style="font-size:0.666em; margin-left:20px;"><i>CO-FOUNDER | NEURAL_NET | AXI_AI</i></div>
+        <div style="font-size:0.666em; margin-left:20px;"><i>OPENSEA | RARIBLE | AR/VR/METAVERSE/BLOCKCHAIN</i></div>
         <div style="font-size:0.666em; margin-left:20px;"><i>TWITTER | INSTAGRAM | LINKTREE | YOUTUBE</i></div>
         <div style="font-size:0.666em; margin-left:20px;"><i>SPAZE FALCON#1234 DISCORD</i></div>
     </section>
@@ -483,7 +496,7 @@ const METANET = { //ATTRIBUTE OVERRIDES BY TOKEN ID,
     </a>
     <h3>LINKTREE</h3>
     <a href="https://linktr.ee/spazefalcon" target="_blank">
-    <img src="./images/qrcode_linktree.png"  style="border-radius:10%;width:80%;max-width:12em;"/>
+    <img src="./images/qrcode_portfolio.png"  style="border-radius:10%;width:80%;max-width:12em;"/>
     </a>
     <h3>AI_PORTFOLIO</h3>
             ${AboutMeTXT2}`;
@@ -495,16 +508,16 @@ const METANET = { //ATTRIBUTE OVERRIDES BY TOKEN ID,
             <div><b>AXI_AI</b> | 2018 ~ 2025</div>
             <div style="margin-left:20px; margin-bottom: 20px;"><i>AI ARCHITECT | Hugging Face LLM | Google Research | CoLab | Python</i></div>
             <div><b>NEURAL_NET</b> | 2023 ~ 2024</div>
-            <div style="margin-left:20px;"><i>Data VIS | Gemini | Google Gold Developer </i></div>
-            <div style="margin-left:20px; margin-bottom: 20px;"><i>TensorFlow | AIWeb Training | Google Cloud</i></div>
+            <div style="margin-left:20px;"><i>Data VIS | Gemini | LLM | TensorFlow </i></div>
+            <div style="margin-left:20px; margin-bottom: 20px;"><i>Google Gold Developer | AIWeb Class | Google Cloud Cert</i></div>
         </aside>
         <aside style="text-align:left;margin:1em;line-height:2em;color:steelblue;width: 50%;">
-            <div><b>AI_CREATIVE_DEV</b> | ~ 2025</div>
-            <div style="margin-left:20px; margin-bottom: 20px;"><i>Audio/Video Gen | YouTube</i></div>
-            <div><b>AI_STORYBOOK</b> | 2020 ~ 2025</div>
-            <div style="margin-left:20px;margin-bottom: 20px;"><i>Image Gen | Google Storybook</i></div>
             <div><b>AI BANKBOOKS</b> | ~ 2024</div>
-            <div style="margin-left:20px; margin-bottom: 20px;"><i>Data VIS | CODE Gen | CoPilot | FIN TECH</i></div>
+            <div style="margin-left:20px; margin-bottom: 20px;"><i>Data VIS | CODE Gen | CoPilot | Web3 | Charts | API | FIN TECH</i></div>        
+            <div><b>AI_STORYBOOK</b> | 2020 ~ 2025</div>
+            <div style="margin-left:20px;margin-bottom: 20px;"><i>Gemini | Nano Banana Gen | Google Storybook | VIBE code WEB APP</i></div>
+            <div><b>AI_CREATIVE_DEV</b> | ~ 2025</div>
+            <div style="margin-left:20px; margin-bottom: 20px;"><i>Audio/Video Gen | YouTube</i></div>            
         </aside>
 
 
@@ -720,26 +733,33 @@ As he wipes dust from Orby's eye.
 ];
 
 let AI_HISTORY = [
-    {TTL:"AI_NEURAL_NET",SUB:"3D interactive viz of embed matrix, TensorFlow, Three.js, WebGL, WebAI",
+    {TTL:"AI_NEURAL_NET:",SUB:"3D interactive viz of embed matrix, TensorFlow, Three.js, WebGL, WebAI",
      IMG:"./assets/img/1.png"},
     {IMG:"./assets/img/2.png",SUB:"AI_BRAIN_VIZ: CoPilot, VSCode, VIBE, WebAI"},
     {IMG:"./assets/img/3.png",SUB:"AI: Neural_Net, interactive 3D viz Web APP, movie player."},
-    {TTL:"CORPUS VIZ",
+    {TTL:"CORPUS VIZ:",
      IMG:"./assets/img/4.png",SUB:"D3.js force directed graph of  custom text corpus."},
     {IMG:"./assets/img/5.png",SUB:"Exploring TensorFlow Embeddings, PCA, T-SNE"},
     {IMG:"./assets/img/6.png",SUB:"AI: FINE-TUINING, Trainer Modules"},
     {IMG:"./assets/img/7.png",SUB:"AI_Neural Net Trainer, plays 10,000 EPOCH like movie."},
     {IMG:"./assets/img/8.png",SUB:"AI: SPEECH to TEXT, dictation device, VIBE APP."},
-    {TTL:"GOOGLE CLOUD DEV:",
-     IMG:"./assets/img/9.png",SUB:"Top developer 2023, Vertex AI, Gemini, CoLab, LLM, TensorFlow"},
+    {TTL:"GOOGLE AI CLOUD DEV:",
+     IMG:"./assets/img/9.png",SUB:"Top developer 2023, Vertex AI, Gemini, CoLab, LLM, Certificate"},
     {IMG:"./assets/img/10.png",SUB:""},
     {IMG:"./assets/img/11.png",SUB:""},
     {IMG:"./assets/img/12.png",SUB:"A few examples of many training badges."},
-    {TTL: "AI_BANKBOOKZ",IMG:"./assets/img/14.png",SUB:"VIBE coded FIN TECH, CoPilot, Web3, API"},
+    {TTL: "AI_BANKBOOKZ | FINTECH:",IMG:"./assets/img/14.png",SUB:"VIBE coded FIN TECH, CoPilot, Web3, API"},
     {IMG:"./assets/img/15.png",SUB:"AI Gen, many advanced charts, graphs, and data viz."},
     {IMG:"./assets/img/13.png",SUB:"IMPRESSIVE MARGINS!"},
     {IMG:"./assets/img/16.png",SUB:"IMPRESSIVE UI to track and manage finances."},
-    {IMG:"./assets/img/17.png",SUB:"AI_MATRIX: THE END!"},
+    {IMG:"./assets/img/17.png",SUB:"UI/UX INTERFACE DESIGN."},
+    {IMG:"./assets/img/18.png",SUB:"Implemented MOMENTUM API"},
+    {IMG:"./assets/img/19.png",SUB:"Implemented exact price tracking."},
+    {IMG:"./assets/img/20.png",SUB:"Implemented Advanced APIs."},
+    {IMG:"./assets/img/21.png",SUB:"Imlemented DRAW CHART!"},
+    {TTL:"WEB3 | BLOCKCHAIN:",IMG:"./assets/img/22.png",SUB:"ENCODE ACADEMY CERTIFICATE."},
+    {IMG:"./assets/img/23.png",SUB:"BLOCKCHAIN TECH TREE."},
+    {IMG:"./assets/img/24.png",SUB:"AI_MATRIX: THE END!"},
 ];
 
 function nextPage(){

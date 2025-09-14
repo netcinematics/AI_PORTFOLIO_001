@@ -51,7 +51,7 @@
     IMGBIT.style.backgroundColor = 'black';
     // IMGBIT.style.backgroundColor = getRandoColor();
     IMGBIT.style.border = "1px solid steelblue"
-    if(document.body.clientWidth > 888){ IMGBIT.style.borderWidth = "0px";  } //RESPONSIVE
+    if(document.body.clientWidth > 888){ IMGBIT.style.borderWidth = "1px";  } //RESPONSIVE
     IMGBIT.style.borderRadius = "13px"
     IMGBIT.style.padding = "0.888em"
     IMGBIT.style.margin = "0.88em auto"
@@ -305,7 +305,7 @@ function createSTORYBOOK_PAGE(bitz, pgNum, pgTotal){
     IMGBIT.style.backgroundColor = 'black';
     // IMGBIT.style.backgroundColor = getRandoColor();
     IMGBIT.style.border = "1px solid steelblue"
-    if(document.body.clientWidth > 888){ IMGBIT.style.borderWidth = "0px";  } //RESPONSIVE
+    if(document.body.clientWidth > 888){ IMGBIT.style.borderWidth = "1px";  } //RESPONSIVE
     IMGBIT.style.borderRadius = "13px"
     IMGBIT.style.padding = "0.888em"
     IMGBIT.style.margin = "0.88em auto"
@@ -432,7 +432,7 @@ function createKRYPTO_PAGE(bitz, pgNum, pgTotal){
     IMGBIT.style.backgroundColor = 'black';
     // IMGBIT.style.backgroundColor = getRandoColor();
     IMGBIT.style.border = "1px solid steelblue"
-    if(document.body.clientWidth > 888){ IMGBIT.style.borderWidth = "0px";  } //RESPONSIVE
+    if(document.body.clientWidth > 888){ IMGBIT.style.borderWidth = "1px";  } //RESPONSIVE
     IMGBIT.style.borderRadius = "13px"
     IMGBIT.style.padding = "0.888em"
     IMGBIT.style.margin = "0.88em auto"
@@ -798,6 +798,7 @@ function create_UTOOB_VIEW(){ // show ALL YOUTUBE VIDS
         display_ITEM = UTOOBZ_META[i];
         create_META_VIEW(display_ITEM)
     }
+
     kbz.MainVw.item_idx = null; //reset menu to work
 
 }
@@ -1016,6 +1017,7 @@ function create_META_VIEW(ViewData){ //BUILD METACARD DISPLAY - for MANY types o
         if (metaCard) { metaCard.insertAdjacentElement('beforeend',metaCardSubTitle); }
         if (metaFrame && metaCard) { metaFrame.insertAdjacentElement('beforeend', metaCard); }
         if (nftDisplay1) { nftDisplay1.insertAdjacentElement('beforeend', metaFrame); }
+
     } //END CREATE META CARD
 
 let stopAllVideos = function(){

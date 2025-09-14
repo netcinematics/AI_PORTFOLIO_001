@@ -756,7 +756,7 @@ let AI_HISTORY = [
     {IMG:"./assets/img/18.png",SUB:"Implemented MOMENTUM API"},
     {IMG:"./assets/img/19.png",SUB:"Implemented exact price tracking."},
     {IMG:"./assets/img/20.png",SUB:"Implemented Advanced APIs."},
-    {IMG:"./assets/img/21.png",SUB:"Imlemented DRAW CHART!"},
+    {IMG:"./assets/img/21.png",SUB:"Implemented DRAW CHART!"},
     {TTL:"WEB3 | BLOCKCHAIN:",IMG:"./assets/img/22.png",SUB:"ENCODE ACADEMY CERTIFICATE."},
     {IMG:"./assets/img/23.png",SUB:"BLOCKCHAIN TECH TREE."},
     {IMG:"./assets/img/24.png",SUB:"AI_MATRIX: THE END!"},

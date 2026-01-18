@@ -104,6 +104,7 @@
         }
 
         .linkHover {
+            color: steelblue;
             border-bottom: 1px solid #2777b0ff;
             padding: 1em;
             border-radius: 18px;
@@ -120,10 +121,6 @@
             border-bottom: 1px solid yellow;
         }
     </style>
-</head>
-
-<body>
-
     <style>
         .tradeMark {
             position: relative;
@@ -252,6 +249,9 @@
                     color-stop(0.86, rgb(28, 58, 148)));
         }
     </style>
+</head>
+
+<body class="blueScroll">
     <!-- TOP MENU -->
     <section id="topMenuFrame" style="padding: 0.444em; display:block;">
         <button id="btmNavBtn13" class="menuBtn" onclick="menuFn(event)" }>
@@ -286,6 +286,7 @@
             box-shadow: 0px -1px 8px 4px #525245;
         }
     </style>
+
     <button id="mainTOPLFTBTN" class="steelNeonIconBtn" style='position:fixed;top:1%;left:0.5%;z-index:1111'><i
             class="fa fa-bars"></i></button>
     <!-- <a href="https://netcinematics.github.io/KRYPTOSPAZE/" target="_blank">
@@ -488,9 +489,55 @@ put all your mobile styles above*/
 
 
             row {
-                flex-wrap: nowrap;
+                flex-wrap: wrap;
                 flex-direction: row;
             }
+
+
+
+            /* ***********************************CUSTOM SCROLLBAR****************************/
+            .scrollBarV {
+                overflow-x: scroll;
+            }
+
+            .scrollBarV::-webkit-scrollbar-track {
+                background-color: #010213;
+                border-radius: 13px;
+            }
+
+            .scrollBarV::-webkit-scrollbar {
+                width: 0.666em;
+                height: 100%;
+            }
+
+            .scrollBarV::-webkit-scrollbar-thumb {
+                background-color: #04223c;
+                border-radius: 13px;
+                background-image: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.6) 26%, transparent 26%, transparent 51%, rgba(255, 255, 255, -0.4) 51%, rgba(255, 255, 255, 0.6) 74%, transparent 74%, transparent);
+            }
+
+            .scrollBarH {
+                overflow-y: scroll;
+            }
+
+            .scrollBarH::-webkit-scrollbar-track {
+                background-color: #010213;
+                border-radius: 13px;
+            }
+
+            .scrollBarH::-webkit-scrollbar {
+                height: 0.666em;
+                width: 100%;
+            }
+
+            .scrollBarH::-webkit-scrollbar-thumb {
+                background-color: #04223c;
+                border-radius: 13px;
+                /* background-image: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.6) 26%, transparent 26%, transparent 51%, rgba(255, 255, 255, -0.4) 51%, rgba(255, 255, 255, 0.6) 74%, transparent 74%, transparent); */
+            }
+
+
+
         }
     </style>
 

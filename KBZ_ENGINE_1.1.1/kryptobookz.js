@@ -498,19 +498,21 @@ function initPage() {
         let AIProjectTXT = `
     <section id="AI_PROJECTS" style="display: flex;line-height:2em;color:steelblue;">
         <aside style="text-align:left;margin:1em;line-height:2em;color:steelblue;width: 50%;">
-            <div><b>GOOGLE DEV PROGRAM</b> | 2018 ~ 2025</div>
+            <div><b>GOOGLE DEV PROGRAM</b> | 2018 - 2025</div>
             <div style="margin-left:20px;"><i>Google Gold Developer | Google Cloud Cert</i></div>
             <div style="margin-left:20px; margin-bottom: 20px;"><i>Data VIS | Gemini | LLM | TensorFlow </i></div>
-            <div><b>WEBAI</b> | 2023 ~ 2024</div>
-            <div style="margin-left:20px; margin-bottom: 20px;"><i>Jason Mayes | Web 4.0 | Google Research | CoLab | Python</i></div>
+            <div><b>Google WEBAI</b> | 2023 - 2024</div>
+            <div style="margin-left:20px; margin-bottom: 20px;"><i> WebAI, Web 4.0 | SLM |Google Research Course/Badges/Study | CoLab | Python</i></div>
+            <div><b>Encode Academy</b> | 2025</div>
+            <div style="margin-left:20px; margin-bottom: 20px;"><i>Alchemy University</i></div>
         </aside>
         <aside style="text-align:left;margin:1em;line-height:2em;color:steelblue;width: 50%;">
-            <div><b>CU ML by hand</b> | ~ 2024</div>
+            <div><b>CU ML by hand</b> | 2024</div>
             <div style="margin-left:20px; margin-bottom: 20px;"><i>Dr. Tom Ye | CODE Gen | CoPilot | Web3 | Charts | API | FIN TECH</i></div>        
-            <div><b>GENAI.works</b> | 2020 ~ 2025</div>
+            <div><b>GENAI Academy</b> | 2020 - 2025</div>
             <div style="margin-left:20px;margin-bottom: 20px;"><i>Gemini | Nano Banana Gen | Google Storybook | VIBE code WEB APP</i></div>
-            <div><b>Encode Academy</b> | ~ 2025</div>
-            <div style="margin-left:20px; margin-bottom: 20px;"><i>Alchemy University</i></div>            
+            <div><b>UNC (University of Northern Colorado)</b></div>
+            <div style="margin-left:20px; margin-bottom: 20px;"><i>Presidential Silver Scholarship awards, 4.0 GPA.</i></div>            
         </aside>
 
 
@@ -704,7 +706,7 @@ function initPage() {
 
         var txtCard2 = 0;
         txtCard2 = document.createElement('footer'); //IMG  //OTHER IMAGE TYPES HERE
-        txtCard2.innerText = "AI EXAMPLES"; //large 600 size
+        txtCard2.innerText = "AI_DESCRIPTIONS"; //large 600 size
         txtCard2.style.width = "100%";
         txtCard2.style.maxWidth = "32em"
         txtCard2.style.padding = "2em"
@@ -752,35 +754,42 @@ function initPage() {
             ${AIProjectRow2}`;
 
         let AIProjectTXT = `
-        
         <section class="projectROW" style="width:90%;text-align:left;margin:1em;line-height:2em;color:steelblue;">
-            <h3 style="margin-bottom:0;">AI_RESEARCH</h3>
+            <h2 style="margin-bottom:0;">AI_RESEARCH:</h2>
             <row class="rowSCROLL" style="display:flex; width:100%; margin: 3px 20px;">
                     <aside style="margin:1em 0 1em 2%;display:flex; flex:1 0; flex-direction:column;">
-                        <div><b>"BANKBOOKS"</b> | 2018 ~ 2025</div>
-                        <div style="margin-left:20px; margin-bottom: 20px;"><i>AI ARCHITECT | Hugging Face LLM | Google Research | CoLab | Python</i></div>
+                        <div class="projectTITLE">"BANKBOOKS" <span class="projectYEARS">| 2024</span></div>
+                        <div style="margin-left:20px; margin-bottom: 20px;"><i>AI CodeGen | Claude/CoPilot | API analytics | FinTech | Sine, Cosine math.</i></div>
                         <footer> 
                             <a class="linkHover" href="https://netcinematics.github.io/BANKBOOKZ/" target="_blank" style="color: inherit;">https://netcinematics.github.io/BANKBOOKZ/</a>
                         </footer>
                     </aside>
                     <aside style="margin:1em 0 1em 2%;display:flex; flex:1 0; flex-direction:column;">
-                        <div><b>"JS_NEURAL_NET"</b> | 2018 ~ 2025</div>
-                        <div style="margin-left:20px; margin-bottom: 20px;"><i>AI ARCHITECT | Hugging Face LLM | Google Research | CoLab | Python</i></div>
+                        <div class="projectTITLE">"JS_NEURAL_NET" <span class="projectYEARS">| 2023</span></div>
+                        <div style="margin-left:20px; margin-bottom: 20px;"><i>Google AI Foundations | AI RESEARCH | Visualize LLM History (CNN/RNN) | Transformer.js, HuggingFace, Tensorflow.</i></div>
                         <footer>
                             <a class="linkHover" href="https://netcinematics.github.io/JS_NEURAL_NET_1/" target="_blank" style="color: inherit;">https://netcinematics.github.io/JS_NEURAL_NET_1/</a>
                         </footer>
                     </aside>
                     <aside style="margin:1em 0 1em 2%;display:flex; flex:1 0; flex-direction:column;">
-                        <div><b>"AI_SUGARCUBE"</b> | 2023 ~ 2024</div>
-                        <div style="margin-left:20px;"><i>Data VIS | Gemini | LLM | TensorFlow </i></div>
+                        <div class="projectTITLE">"AI_SUGARCUBE" <span class="projectYEARS">| 2026</span></div>
+                        <div style="margin-left:20px;"><i>Data Visualization Innovation | Latent Space debug | LLM | PCA, t-SNE. </i></div>
                         <footer>
-                            <a class="linkHover" href="https://netcinematics.github.io/aPRYZMaGAMEa/" target="_blank">
-                            https://netcinematics.github.io/aPRYZMaGAMEa/</a>
+                            <a class="linkHover" href="https://netcinematics.github.io/AI_SUGARCUBE_001/" target="_blank">
+                            https://netcinematics.github.io/AI_SUGARCUBE_001/</a>
                         </footer>
                     </aside>
                     <aside style="margin:1em 0 1em 2%;display:flex; flex:1 0; flex-direction:column;">
-                        <div><b>AI_WHITEPAPER</b> | 2023 ~ 2024</div>
-                        <div style="margin-left:20px;"><i>Data VIS | Gemini | LLM | TensorFlow </i></div>
+                        <div class="projectTITLE">"ALPHABITZ" <span class="projectYEARS">| 2025</span></div>
+                        <div style="margin-left:20px;"><i>Google Agents Intensive Course Certification Project | Python | Plotly 3D Latent Space | AI CAPSTONE | Interactive 3D to AI Visualization.</i></div>
+                        <footer>
+                            <a class="linkHover" href="https://www.kaggle.com/competitions/agents-intensive-capstone-project/writeups/alphabitz" target="_blank">
+                            https://www.kaggle.com/competitions/agents-intensive-capstone-project/writeups/alphabitz</a>
+                        </footer>
+                    </aside>
+                    <aside style="margin:1em 0 1em 2%;display:flex; flex:1 0; flex-direction:column;">
+                        <div class="projectTITLE">"AI_WHITEPAPERS" <span class="projectYEARS">| 2020-2025</span></div>
+                        <div style="margin-left:20px;"><i>AI NLP Linguistics RESEARCH | Ambiguity, Polysemy, Synonymy, Cliche, Idiom | LLM (BPE) optimization | Nomenclature Adaptation. </i></div>
                         <footer>
                             <a class="linkHover" href="https://substack.com/inbox/post/160790053" target="_blank">
                             https://substack.com/inbox/post/160790053</a>
@@ -789,67 +798,76 @@ function initPage() {
             </row>
             <div style="border-bottom: 1px solid #9C27B0;padding: 1em;border-radius: 18px;margin-left:20px; margin-bottom: 20px;"><i>Google Gold Developer | AIWeb Class | Google Cloud Cert</i></div>
         </section>
+        <hr>
         <section class="projectROW" style="width:90%;text-align:left;margin:1em;line-height:2em;color:steelblue;">
-            <h3 style="margin-bottom:0;">AI_TOOLS & GAMES</h3>
+            <h2 style="margin-bottom:0;">AI_TOOLS & GAMES:</h2>
             <row class="rowSCROLL" style="display:flex; width:100%; margin: 3px 20px;">
                     <aside style="margin:1em 0 1em 2%;display:flex; flex:1 0; flex-direction:column;">
-                        <div><b>"BOXiGON"</b> | ~ 2024</div>
-                        <div style="margin-left:20px; margin-bottom: 20px;"><i>Data VIS | CODE Gen | CoPilot | Web3 | Charts | API | FIN TECH</i></div>        
+                        <div class="projectTITLE">"BOXiGON" <span class="projectYEARS">| 2019</span></div>
+                        <div style="margin-left:20px; margin-bottom: 20px;"><i>WebGL Matrix| Matrix Math | Steam Deploy (itch.io) | Movie/Music/Audio, Branding & 3D design.</i></div>        
                         <footer>
                             <a class="linkHover" href="https://store.steampowered.com/app/842490/BOXiGON/" target="_blank" style="color: inherit;">https://store.steampowered.com/app/842490/BOXiGON/</a>
                         </footer>
                     </aside>
                     <aside style="margin:1em 0 1em 2%;display:flex; flex:1 0; flex-direction:column;">
-                        <div><b>"SPAZEBOTZ"</b> | 2020 ~ 2025</div>
-                        <div style="margin-left:20px;margin-bottom: 20px;"><i>AI_STORYBOOK</i></div>
+                        <div class="projectTITLE">"SPAZEBOTZ" <span class="projectYEARS">| 2023-2024</span></div>
+                        <div style="margin-left:20px;margin-bottom: 20px;"><i>AI_STORYBOOK | Gemini | Nano Banana Gen | Google Storybook | VIBE code WEB APP</i> Hero Journey | Original story "cozmospaze".</i></div>
                         <footer >
                             <a class="linkHover" href="https://netcinematics.github.io/AI_STORYBOOK/" target="_blank" style="color: inherit;">https://netcinematics.github.io/AI_STORYBOOK</a>
                         </footer>
                     </aside>
                     <aside style="margin:1em 0 1em 2%;display:flex; flex:1 0; flex-direction:column;">
-                        <div><b>"aWORDaGAMi"</b> | ~ 2025</div>
-                        <div style="margin-left:20px; margin-bottom: 2px;"><i>"COZMOSPAZE" | YouTube</i></div>            
+                        <div class="projectTITLE">"aWORDaGAMi" <span class="projectYEARS">| 2022</span></div>
+                        <div style="margin-left:20px; margin-bottom: 2px;"><i>Rhyming Song lyrics for AI. | AI UI/UX | WORD GAME CORPUS display | AI_SANDBOX.</i></div>            
                         <footer>
                             <a class="linkHover" href="https://netcinematics.github.io/aPRYZMaGAMEa/" target="_blank" style="color: inherit;">https://netcinematics.github.io/aPRYZMaGAMEa/</a>
                         </footer>                    
                     </aside>
                     <aside style="margin:1em 0 1em 2%;display:flex; flex:1 0; flex-direction:column;">
-                        <div><b>"AI_CORPORA"</b> | ~ 2025</div>
-                        <div style="margin-left:20px; margin-bottom: 20px;"><i>Audio/Video Gen | YouTube</i></div>            
+                        <div class="projectTITLE">"AI_CORPORA" <span class="projectYEARS">| 2021 </span></div>
+                        <div style="margin-left:20px; margin-bottom: 20px;"><i> AI RESEARCH | Speech-to-Text | Speech-to-Audio (wav) | Dictation tools for AI Notes.</i></div>            
                         <footer>
                             <a class="linkHover" href="https://netcinematics.github.io/ai_CORPORA/" target="_blank" style="color: inherit;">https://netcinematics.github.io/ai_CORPORA/</a>
+                        </footer>
+                    </aside>
+                    <aside style="margin:1em 0 1em 2%;display:flex; flex:1 0; flex-direction:column;">
+                        <div class="projectTITLE">"AI_NOTES" <span class="projectYEARS">| 2025 </span></div>
+                        <div style="margin-left:20px; margin-bottom: 20px;"><i> AI RESEARCH | CERTIFICATIONS | CU Studies |GitHub text Dictation | AI CORE, AI FOUNDATION & AI FRONTIER | AI Notes.</i></div>            
+                        <footer>
+                            <a class="linkHover" href="https://github.com/netcinematics/AI_CERTIFICATION_NOTES" target="_blank" style="color: inherit;">https://github.com/netcinematics/AI_CERTIFICATION_NOTES</a>
                         </footer>
                     </aside>
             </row>
             <div style="border-bottom: 1px solid #9C27B0;padding: 1em;border-radius: 18px;margin-left:20px; margin-bottom: 20px;"><i>Google Gold Developer | AIWeb Class | Google Cloud Cert</i></div>
         </section>
+        <hr>
         <section class="projectROW" style="width:90%;text-align:left;margin:1em;line-height:2em;color:steelblue;">
-            <h3 style="margin-bottom:0;">AI_MUSIC_VIDEO</h3>
+            <h2 style="margin-bottom:0;">AI_MUSIC_VIDEO:</h2>
             <row class="rowSCROLL" style="display:flex; width:100%; margin: 3px 20px;">
                     <aside style="margin:1em 0 1em 2%;display:flex; flex:1 0; flex-direction:column;">
-                        <div><b>"COZMOSPAZE"</b> | ~ 2024</div>
-                        <div style="margin-left:20px; margin-bottom: 20px;"><i>Data VIS | CODE Gen | CoPilot | Web3 | Charts | API | FIN TECH</i></div>
+                        <div class="projectTITLE">"COZMOSPAZE" <span class="projectYEARS">| 2017-2021</span></div>
+                        <div style="margin-left:20px; margin-bottom: 20px;"><i>3D Metaspace Matrix to Movie (mp4) | Web/VR/Playstation | Video Generation | YouTube "ai_creative_dev".</i></div>
                         <footer>
                             <a class="linkHover" href="https://www.youtube.com/watch?v=ZXFtQ73RNBQ" target="_blank" style="color: inherit;">https://www.youtube.com/watch?v=ZXFtQ73RNBQ</a>
                         </footer>
                     </aside>
                     <aside style="margin:1em 0 1em 2%;display:flex; flex:1 0; flex-direction:column;">
-                        <div><b>"ANIMALHOUSE"</b> | 2020 ~ 2025</div>
-                        <div style="margin-left:20px;margin-bottom: 20px;"><i>Gemini | Nano Banana Gen | Google Storybook | VIBE code WEB APP</i></div>
+                        <div class="projectTITLE">"ANIMALHOUSE" <span class="projectYEARS">| 2025</span></div>
+                        <div style="margin-left:20px;margin-bottom: 20px;"><i>AI Music Video SYNTHESIS: between SYMPHONY, ANIMALS & EDM (Rock & Roll) style | "AI_Fusion" experiment | AI Video.</i></div>
                         <footer>
                             <a class="linkHover" href="https://www.youtube.com/watch?v=kspS9NO-RwM" target="_blank" style="color: inherit;">https://www.youtube.com/watch?v=kspS9NO-RwM</a>
                         </footer>
                     </aside>
                     <aside style="margin:1em 0 1em 2%;display:flex; flex:1 0; flex-direction:column;">
-                        <div><b>"CYBERCITY"</b> | ~ 2025</div>
-                        <div style="margin-left:20px; margin-bottom: 20px;"><i>Audio/Video Gen | YouTube</i></div>
+                        <div class="projectTITLE">"CYBERCITY" <span class="projectYEARS">| 2024-2025</span></div>
+                        <div style="margin-left:20px; margin-bottom: 20px;"><i>Google VEO 3 | AI_Fusion Funk with "FILM NOIR" & Cyberwave, retro bonnie & clyde (faux-romance) | Post-Modern "hyperwave" | self-reflective AMERICANA experiment | Absurdist Hero Journey | "Legends of Cowboy & Lady" ep.3 | AI Video.</i></div>
                         <footer>
                             <a class="linkHover" href="https://www.youtube.com/watch?v=XY1e6rTOOhk" target="_blank" style="color: inherit;">https://www.youtube.com/watch?v=XY1e6rTOOhk</a>
                         </footer>
                     </aside>
                     <aside style="margin:1em 0 1em 2%;display:flex; flex:1 0; flex-direction:column;">
-                        <div><b>"EDMWEB"</b> | ~ 2025</div>
-                        <div style="margin-left:20px; margin-bottom: 20px;"><i>Audio/Video Gen | YouTube</i></div>
+                        <div class="projectTITLE">"EDMWEB" <span class="projectYEARS">| 2025</span></div>
+                        <div style="margin-left:20px; margin-bottom: 20px;"><i>Web Audio/Video Gallery | YouTube | VIBE code WEB APP</i></div>
                         <footer>
                             <a class="linkHover" href="https://netcinematics.github.io/EDMWEB/" target="_blank" style="color: inherit;">https://netcinematics.github.io/EDMWEB/</a>
                         </footer>
@@ -1103,74 +1121,93 @@ As he wipes dust from Orby's eye.
 
 let AI_HISTORY = [
     {
-        TTL: "AI_NEURAL_NET:", SUB: "3D interactive viz of embed matrix, TensorFlow, Three.js, WebGL, WebAI",
-        IMG: "./assets/img/1.png"
+        TTL: "AI_SUGARCUBE (AI_VIZ):", SUB: "3D interactive viz of embedding space matrix, TensorFlow, Three.js, WebGL, WebAI. BPE innovation, to Visualize Matrix Manifold.",
+        IMG: "./assets/img/2026-01-19 171024.png"
     },
-    { IMG: "./assets/img/2.png", SUB: "AI_BRAIN_VIZ: CoPilot, VSCode, VIBE, WebAI" },
+    { TTL: "AI_NEURAL_NET:", IMG: "./assets/img/7.png", SUB: "AI_TIMELINE: Replays Neuron Training like a movie!" },
+    { IMG: "./assets/img/2.png", SUB: "AI_BRAIN_VIZ: CoPilot, VSCode, Gemini VIBE, Google WebAI course." },
     { IMG: "./assets/img/3.png", SUB: "AI: Neural_Net, interactive 3D viz Web APP, movie player." },
+    { IMG: "./assets/img/2026-01-15 103055.png", SUB: "Google DevTools, debugging, Chrome, Node.js, visualize hidden weights/layers." },
+    {
+        TTL: "Python Plotly (Latent Space):",
+        IMG: "./assets/img/ALPHABITZ_002.png", SUB: "Python Scatter plot of custom text corpus (t-SNE)."
+    },
+    {
+        IMG: "./assets/img/2025-11-28 173752.png", SUB: "Rich class diagrams and flow charts of complex Agentic AI, Agent-as-Judge."
+    },
     {
         TTL: "CORPUS VIZ:",
         IMG: "./assets/img/4.png", SUB: "D3.js force directed graph of  custom text corpus."
     },
     { IMG: "./assets/img/5.png", SUB: "Exploring TensorFlow Embeddings, PCA, T-SNE" },
-    { IMG: "./assets/img/6.png", SUB: "AI: FINE-TUINING, Trainer Modules" },
-    { IMG: "./assets/img/7.png", SUB: "AI_Neural Net Trainer, plays 10,000 EPOCH like movie." },
-    { IMG: "./assets/img/8.png", SUB: "AI: SPEECH to TEXT, dictation device, VIBE APP." },
-    {
-        TTL: "GOOGLE AI CLOUD DEV:",
-        IMG: "./assets/img/9.png", SUB: "2023 ~ AI Certificate, Vertex AI, Gemini, CoLab, LLM."
-    },
-    { IMG: "./assets/img/10.png", SUB: "" },
-    { IMG: "./assets/img/11.png", SUB: "" },
-    { IMG: "./assets/img/12.png", SUB: "A few examples of many training badges." },
-    { TTL: "AI_BANKBOOKZ | FINTECH:", IMG: "./assets/img/14.png", SUB: "VIBE coded FIN TECH, CoPilot, Web3, API" },
-    { IMG: "./assets/img/15.png", SUB: "AI Gen, many advanced charts, graphs, and data viz." },
+    { TTL: "AI_TOOLING:", IMG: "./assets/img/6.png", SUB: "AI: FINE-TUINING, Trainer Modules" },
+    { IMG: "./assets/img/2026-01-18 221300.png", SUB: "AI_Sandbox: tokenizer word game, word prediction study - aWORDaGAMi." },
+    { IMG: "./assets/img/2026-01-18 221337.png", SUB: "AI_Sandbox: rhyming words (Cliche/Idiom). NLP Tokenizer study." },
+    { IMG: "./assets/img/2026-01-18 221125.png", SUB: "AI_Sandbox: speech-to-text, dictation device, voice recorder (wav)." },
+    { TTL: "AI_BANKBOOKZ | FINTECH:", IMG: "./assets/img/14.png", SUB: "FINTECH innovations, CoPilot, Web3, API." },
+    { IMG: "./assets/img/15.png", SUB: "AI CodeGen, many advanced charts, graphs, and data viz across API." },
     { IMG: "./assets/img/13.png", SUB: "IMPRESSIVE MARGINS!" },
-    { IMG: "./assets/img/16.png", SUB: "IMPRESSIVE UI to track and manage finances." },
-    { IMG: "./assets/img/17.png", SUB: "UI/UX INTERFACE DESIGN." },
-    { IMG: "./assets/img/18.png", SUB: "Implemented MOMENTUM API" },
-    { IMG: "./assets/img/19.png", SUB: "Implemented exact price tracking." },
-    { IMG: "./assets/img/20.png", SUB: "Implemented Advanced APIs." },
+    { IMG: "./assets/img/16.png", SUB: "UI to track and manage finances (AI ready)." },
+    { IMG: "./assets/img/17.png", SUB: "UI/UX INTERFACE DESIGN (AI ready)." },
+    { IMG: "./assets/img/18.png", SUB: "Implemented MOMENTUM API math plots." },
+    { IMG: "./assets/img/19.png", SUB: "Implemented exact price tracking (AI ready)." },
+    { IMG: "./assets/img/20.png", SUB: "Implemented API's for Advanced Leading Indicators, study." },
     { IMG: "./assets/img/21.png", SUB: "Implemented DRAW CHART!" },
-    { TTL: "WEB3 | BLOCKCHAIN:", IMG: "./assets/img/22.png", SUB: "2022 ~ ENCODE ACADEMY CERTIFICATE." },
+    { TTL: "WEB3 | BLOCKCHAIN:", IMG: "./assets/img/2025-09-16 125447.png", SUB: "2022 ~ ENCODE ACADEMY AI Presentation." },
     { IMG: "./assets/img/23.png", SUB: "BLOCKCHAIN TECH TREE." },
-    { IMG: "./assets/img/24.png", SUB: "AI_MATRIX: THE END!" },
+    { TTL: "CREATIVE - 3D Master-crafts:", IMG: "./assets/img/creative/2026-01-11 105954.png", SUB: "'SPAZEFALCON':hand-crafted, fully animated characters - in 3D! SONY DREAMS, blender, virtual-reality, and JavaScript WebGL." },
+    { IMG: "./assets/img/creative/num7.png", SUB: "1st JavaScript Movie, Game, Book, App - on blockchain, with trading cards." },
+    { IMG: "./assets/img/creative/2026-01-15 215348.png", SUB: "BOXiGON: game on steam." },
+    { IMG: "./assets/img/creative/lattice1.png", SUB: "Hand-crafted with 3D matrix math - unlock the box!" },
+    { TTL: "AR/VR/METAVERSE experiments:", IMG: "./assets/img/creative/cyberworld1.png", SUB: "Creator of multiple 3D Worlds. Animated and gamified with orbiting moons!" },
+    { IMG: "./assets/img/creative/3dworldscape4.png", SUB: "Import multiple open-source topographical maps (GIS). Including this Mountain Range - that I can see from my house!" },
+    { IMG: "./assets/img/creative/COVER5_3.png", SUB: "Postcards from the METAVERSE! I surfed distant worldz in the MATRIX! Indie Video Game creator: JavaScript, WebGL, Three.js, and more!" },
+    { IMG: "./assets/img/creative/cryptobannerz_eastridge1.png", SUB: "Another postcard: a stunning sunset from atop 'EAST_RIDGE' of 'CRATER_LAKE' on MARZA_MOON!" },
+    { IMG: "./assets/img/creative/cryptobannerz_northcraterlake1.png", SUB: "From the location of a spazecrash in craterlake!" },
+    { TTL: "Augmented Reality:", IMG: "./assets/img/creative/download.jpg", SUB: "From this Augmented Reality Image: enables..." },
+    { IMG: "./assets/img/creative/image60a9a.png", SUB: "An (augmented) forest on my head." },
+    { IMG: "./assets/img/creative/imageb137.png", SUB: "An AR forest fire in my lab." },
+    { IMG: "./assets/img/creative/imaged374.png", SUB: "... and a Solar System in my hand - with orbit (and texture) animations!" },
+    { IMG: "./assets/img/creative/luhky.png", SUB: "I painted this 'spaze_dragon' character in Virtual Reality." },
+    { IMG: "./assets/img/creative/cryptobannerz_orby_scope2.png", SUB: "Looking through a 'COZMOSCOPE' into cyber_worldz!" },
+    { IMG: "./assets/img/creative/2025-02-11 114359.png", SUB: "Thank you for being here." },
+    { IMG: "./assets/img/creative/24.png", SUB: "THE END!" },
 ];
 
 let AI_CERTS = [
     {
-        TTL: "AI_CERTS:", SUB: "3D interactive viz of embed matrix, TensorFlow, Three.js, WebGL, WebAI",
+        TTL: "AI_CERTS & BADGES:", SUB: "Proud of Google Gold League Developer level.",
         IMG: "./assets/certs/1.png"
     },
-    { IMG: "./assets/certs/2.png", SUB: "AI: Neural_Net, interactive 3D viz Web APP, movie player." },
-    { IMG: "./assets/certs/3.png", SUB: "AI: Neural_Net, interactive 3D viz Web APP, movie player." },
+    { IMG: "./assets/certs/intensive.png", SUB: "Google Intensive Agent training, Kaggle, Colab, Python, Plotly." },
+    { IMG: "./assets/certs/2026-01-11 232816.png", SUB: "Agentics, MCP, A2A, MAS, evaluation, deploy." },
+    { IMG: "./assets/certs/2.png", SUB: "GENERATIVE AI: Image, Audio, Video, Vibe, and Human-Centric AI design." },
+    { IMG: "./assets/certs/2025-11-20 152124.png", SUB: "Context Engineering, Agent creation, with AI Persona." },
+    { IMG: "./assets/certs/2025-11-10 100721.png", SUB: "Google Cloud Innovator member, access to Google experts." },
+    { IMG: "./assets/certs/2025-10-28 102311.png", SUB: "Colorado University, ongoing AI core math learning series." },
+    { IMG: "./assets/certs/2025-10-28 100450.png", SUB: "CU Agentic LLM and SLM 2025 series." },
+    { IMG: "./assets/certs/2026-01-15 120215.png", SUB: "AI by Hand 2026 series, Attention & SLM." },
+    { IMG: "./assets/certs/3.png", SUB: "GenAI Academy series." },
+    { IMG: "./assets/certs/2025-10-28 122328.png", SUB: "Section Certificate - AI business perspectives." },
+    { IMG: "./assets/certs/2025-11-13 191556.png", SUB: "Verified Section Certificate." },
+    { IMG: "./assets/certs/2026-01-13 180337.png", SUB: "Google Skills badges." },
     {
         TTL: "CORPUS VIZ:",
-        IMG: "./assets/certs/4.png", SUB: "D3.js force directed graph of  custom text corpus."
+        IMG: "./assets/certs/4.png", SUB: "In-depth hidden layer, feed forward layer, attention head, badge."
     },
-    { IMG: "./assets/certs/5.png", SUB: "Exploring TensorFlow Embeddings, PCA, T-SNE" },
-    { IMG: "./assets/certs/6.png", SUB: "AI: FINE-TUINING, Trainer Modules" },
-    { IMG: "./assets/certs/7.png", SUB: "AI_Neural Net Trainer, plays 10,000 EPOCH like movie." },
-    { IMG: "./assets/certs/8.png", SUB: "AI: SPEECH to TEXT, dictation device, VIBE APP." },
-    {
-        TTL: "GOOGLE AI CLOUD DEV:",
-        IMG: "./assets/certs/9.png", SUB: "2023 ~ AI Certificate, Vertex AI, Gemini, CoLab, LLM."
-    },
-    { IMG: "./assets/img/10.png", SUB: "" },
-    { IMG: "./assets/img/11.png", SUB: "" },
-    { IMG: "./assets/img/12.png", SUB: "A few examples of many training badges." },
-    { TTL: "AI_BANKBOOKZ | FINTECH:", IMG: "./assets/img/14.png", SUB: "VIBE coded FIN TECH, CoPilot, Web3, API" },
-    { IMG: "./assets/img/15.png", SUB: "AI Gen, many advanced charts, graphs, and data viz." },
-    { IMG: "./assets/img/13.png", SUB: "IMPRESSIVE MARGINS!" },
-    { IMG: "./assets/img/16.png", SUB: "IMPRESSIVE UI to track and manage finances." },
-    { IMG: "./assets/img/17.png", SUB: "UI/UX INTERFACE DESIGN." },
-    { IMG: "./assets/img/18.png", SUB: "Implemented MOMENTUM API" },
-    { IMG: "./assets/img/19.png", SUB: "Implemented exact price tracking." },
-    { IMG: "./assets/img/20.png", SUB: "Implemented Advanced APIs." },
-    { IMG: "./assets/img/21.png", SUB: "Implemented DRAW CHART!" },
-    { TTL: "WEB3 | BLOCKCHAIN:", IMG: "./assets/img/22.png", SUB: "2022 ~ ENCODE ACADEMY CERTIFICATE." },
-    { IMG: "./assets/img/23.png", SUB: "BLOCKCHAIN TECH TREE." },
-    { IMG: "./assets/img/24.png", SUB: "AI_MATRIX: THE END!" },
+    { IMG: "./assets/certs/5.png", SUB: "In-depth encoder and decoder AI architecture, badge." },
+    { IMG: "./assets/certs/6.png", SUB: "In-depth Transformer and BERT architecture, badge." },
+
+    { IMG: "./assets/certs/2026-01-11 233134.png", SUB: "Badges from DEV platform for Whitepaper/Capstone." },
+    { IMG: "./assets/certs/2026-01-13 175400.png", SUB: "Badges from Google Developers platform." },
+    { IMG: "./assets/certs/2025-12-29 112312.png", SUB: "Badges from Kaggle platform" },
+
+    { IMG: "./assets/certs/2026-01-19 113543.png", SUB: "ETH Mentor and Blockchain technology Graduate, C++/Solidity." },
+    { IMG: "./assets/certs/7.png", SUB: "Deepdive Blockchain technology Certificate, C++/Solidity." },
+    { IMG: "./assets/certs/2026-01-19 185607.png", SUB: "Post graduate work on AI Tokenizer in C++/JavaScript." },
+    { IMG: "./assets/certs/8.png", SUB: "Composed AI Symphony by sequence algorithm." },
+
+    { IMG: "./assets/certs/2023-10-04 171657.png", SUB: "Thank you for your review: THE END!" },
 ];
 
 function nextPage() {
